@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.icon-bar a {
+  width: 18rem;
+    background: #3b5999;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.2rem;
+    transition: all 0.5s linear;
+    transform: translateX(-14.5rem);
+    text-decoration: none;
+}
+
+.icon-bar a:hover {
+  transform: translateX(0);
+}
+
+.icon-bar a .fab {
+  padding-left: 1rem;
+  font-size: 3rem;
+  animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+.icon-bar .twitter {
+  background: #00aced;
+}
+
+.icon-bar .instagram {
+  background: #e4405f;
+}
+
+.icon-bar .youtube {
+  background: #cd201f;
+}
+
+.icon-bar .linkedin {
+  background: #0077b5;
+}
+
+    </style>
+</head>
+<body>
+     <div class="icon-bar">
+      <a href="https://www.facebook.com" class="facebook" target="facebook">
+        click here to visit <i class="fab fa-facebook-square"></i>
+      </a>
+
+      <a href="https://www.telegram.com" class="telegram" target="telegram">
+        click here to visit <i class="fab fa-telegram-plane"></i>
+      </a>
+
+      <a
+        href="https://www.instagram.com"
+        class="instagram"
+        target="instagram">
+        click here to visit <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.linkedin.com" class="linkedin" target="linkedin">
+        click here to visit <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a
+        href="https://www.youtube.com"
+        class="youtube"
+        target="youtube"
+      >
+        click here to visit <i class="fab fa-youtube-square"></i>
+      </a>
+    </div>
+</body>
+</html>
